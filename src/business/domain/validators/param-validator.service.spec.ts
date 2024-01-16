@@ -1,4 +1,4 @@
-import ParameterValidator from "./param-validator";
+import ParameterValidator from "./param-validator.service";
 
 describe("ParameterValidator", () => {
   let validator: ParameterValidator;

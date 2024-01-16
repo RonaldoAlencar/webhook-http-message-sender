@@ -5,7 +5,7 @@ import {
   Response,
 } from "../business/common/adapters/http-server";
 import SendMessageUseCase from "../business/domain/services/use-cases/send-message.use-case";
-import ParameterValidator from "../business/domain/validators/param-validator";
+import ParameterValidator from "../business/domain/validators/param-validator.service";
 import { ReceiveMessageRequest } from "./types";
 
 export default class Controller {
