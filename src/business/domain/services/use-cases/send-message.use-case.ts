@@ -1,5 +1,5 @@
 import IHttpRequest from "../../../common/adapters/http-request";
-import Message from "../../entities/Message";
+import Message from "../../entities/message.entity";
 import { Input } from "./dto/input";
 
 export default class SendMessageUseCase {

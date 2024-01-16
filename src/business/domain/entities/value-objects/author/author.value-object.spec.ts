@@ -1,4 +1,4 @@
-import Author from "./Author";
+import Author from "./author.value-object";
 
 describe("Author", () => {
   it("should create a valid Author", () => {

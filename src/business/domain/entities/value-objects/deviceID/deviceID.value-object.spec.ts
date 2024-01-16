@@ -1,4 +1,4 @@
-import DeviceID from "./DeviceID";
+import DeviceID from "./deviceID.value-object";
 
 describe("DeviceID", () => {
   it("should create a valid DeviceID", () => {

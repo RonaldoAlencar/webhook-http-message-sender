@@ -1,5 +1,5 @@
-import Author from "./value-objects/author/Author";
-import DeviceID from "./value-objects/deviceID/DeviceID";
+import Author from "./value-objects/author/author.value-object";
+import DeviceID from "./value-objects/deviceID/deviceID.value-object";
 
 export default class Message {
   private constructor(

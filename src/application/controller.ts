@@ -4,7 +4,7 @@ import {
   Request,
   Response,
 } from "../business/common/adapters/http-server";
-import SendMessageUseCase from "../business/domain/services/use-cases/send-message";
+import SendMessageUseCase from "../business/domain/services/use-cases/send-message.use-case";
 import ParameterValidator from "../business/domain/validators/param-validator";
 import { ReceiveMessageRequest } from "./types";
 
@@ -37,7 +37,8 @@ export default class Controller {
           sendMessageUseCase.execute(input);
           res.sendStatus(200);
         } catch (error) {
-          res.sendStatus(400);
+          console.log(error);
+          res.sendStatus(400, error);
         }
       },
     );

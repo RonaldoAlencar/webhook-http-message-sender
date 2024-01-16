@@ -1,6 +1,6 @@
 import IHttpRequest from "../../../common/adapters/http-request";
 import { Input } from "./dto/input";
-import SendMessageUseCase from "./send-message";
+import SendMessageUseCase from "./send-message.use-case";
 
 describe("SendMessage", () => {
   let mockHttpRequest: IHttpRequest;

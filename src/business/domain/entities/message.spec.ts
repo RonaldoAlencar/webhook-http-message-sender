@@ -1,4 +1,4 @@
-import Message from "./Message";
+import Message from "./message.entity";
 
 describe("Message", () => {
   it("should create a valid Message", () => {
