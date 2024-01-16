@@ -17,10 +17,19 @@ module.exports = {
     '**/*.service.{ts,js,jsx}',
     '**/*.controller.{ts,js,jsx}',
     '**/*.mapper.{ts,js,jsx}',
+    '**/*.value-object.{ts,js,jsx}',
     '!**/node_modules/**',
     '!**/vendor/**',
     '!**/dist/**',
     '!**/coverage/**',
     '!**/infra/**',
   ],
+  coverageThreshold: {
+    global: {
+      branches: 100,
+      functions: 100,
+      lines: 100,
+      statements: 100
+    }
+  }
 };
