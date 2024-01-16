@@ -48,5 +48,8 @@ Execute o projeto:
 npm start
 ```
 
+### Video de exemplo
+https://github.com/RonaldoAlencar/webhook-http-message-sender/assets/49104855/b0e56fb8-9ceb-4c8d-bfdb-ecac0b33ba45
+
 **Licença**
 Este projeto está licenciado sob a MIT License.
