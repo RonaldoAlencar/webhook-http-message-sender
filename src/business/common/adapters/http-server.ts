@@ -1,5 +1,6 @@
 export interface IServer {
   start(): Promise<void>;
+  stop(): Promise<void>;
   get(path: string, handler: (req: any, res: any) => void): void;
   post(path: string, handler: (req: any, res: any) => void): void;
 }
@@ -16,5 +17,5 @@ export interface Request<T = any> {
 export interface Response {
   send(status: number, body?: any): void;
   json(body: any): void;
-  sendStatus(status: number): void;
+  sendStatus(status: number, body?: any): void;
 }
