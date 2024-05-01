@@ -26,9 +26,9 @@ export default class Controller {
       (req: Request<ReceiveMessageRequest>, res: Response) => {
         try {
           const sendMessageUseCase = new SendMessageUseCase(this.httpRequest);
-          const echoMatch = req.body.data.message.conversation.match(/echo\w*/);
+          const echoMatch = req.body.data.message.extendedTextMessage.text.match(/echo\w*/);
           const input = this.parameterValidator.validate({
-            text: req.body.data.message.conversation
+            text: req.body.data.message.extendedTextMessage.text
               .replace(/echo\w*/g, "")
               .trim(),
             author: req.body.data.pushName,
