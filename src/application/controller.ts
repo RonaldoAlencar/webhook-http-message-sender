@@ -42,5 +42,9 @@ export default class Controller {
         }
       },
     );
+
+    this.server.get("/", (req: Request, res: Response) => {
+      res.send(200, "<h1>Webhook whatsapp bot message is running!</h1>");
+    });
   }
 }
