@@ -1,0 +1,6 @@
+services:
+  webhook-http-message-sender:
+    container_name: webhook-http-message-sender
+    build: .
+    ports:
+      - "3004:3004"
